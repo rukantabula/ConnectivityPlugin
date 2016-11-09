@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConnectivitySample.View.HomePage">
+
+  <ContentPage.ToolbarItems>
+     <ToolbarItem Text="Search"
+                 Icon="magnify.png"
+                 Priority="0"
+                 Order="Primary"
+                 />
+
+    <ToolbarItem Text="Info"
+                 Icon="information.png"
+                 Priority="0"
+                 Order="Secondary"
+                 />
+ 
+
+    <ToolbarItem Text="Help"            
+              Priority="0"
+              Order="Secondary"
+              />
+  </ContentPage.ToolbarItems>
+  <StackLayout BackgroundColor="White">
+   
+
+    <Grid Padding="20">
+     
+        <Label Text="Test Network Connectivity!"
+       TextColor="Navy"
+       HorizontalOptions="Center"
+       FontSize="25"
+         />
+               
+    </Grid>
+
+    <Label Text="Navigate to Menu to start!"
+           TextColor="Olive"
+           HorizontalOptions="Center"
+           FontSize="Medium"/>
+    
+
+    <Image Source="StartImage.jpg" Opacity=".9" VerticalOptions="Fill"  />
+ </StackLayout>
+    
+</ContentPage>

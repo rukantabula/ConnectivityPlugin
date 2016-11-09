@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConnectivitySample.View.ConnectivityPage"
+             >
+  
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Home"
+               Icon="home.png"
+               Priority="0"
+               Order="Primary"
+               Clicked="Home_OnClicked" />
+    
+    <ToolbarItem Text="Search"
+                Icon="magnify.png"
+                Priority="0"
+                Order="Primary"
+                 />
+
+    <ToolbarItem Text="Info"
+                 Icon="information.png"
+                 Priority="0"
+                 Order="Secondary"
+                 />
+
+
+    <ToolbarItem Text="Help"
+              Priority="0"
+              Order="Secondary"
+              />
+  </ContentPage.ToolbarItems>
+
+  <StackLayout>
+    <Button   Clicked="Test_OnClicked"
+               Text="Test Connection"
+              Opacity="0.7"
+              FontSize="15"  />
+
+    <Button   Clicked="Clear_OnClicked"
+         Text="Clear"
+        Opacity="0.7"
+        FontSize="15"  />
+    
+    <Button   Clicked="Refresh_OnClicked"
+             Text="Refresh"
+            Opacity="0.7"
+            FontSize="15"  />
+
+    <Label x:Name="ConnectedLabel"
+            Text="Connection Status: "
+           TextColor="White"
+           FontSize="16"
+           
+           />
+    
+    <Label x:Name="connectionTypeLabel"
+           Text="Connection Type: "
+           TextColor="White"
+           FontSize="16"
+           
+           />
+      
+
+    <Label x:Name="bandwidthLabel"
+           Text="Bandwidth Strength: "
+           TextColor="White"
+           FontSize="16"/>
+
+    <Label Text="Host: Undefined"
+           TextColor="White"
+           FontSize="16"/>
+
+
+    <Label Text="Port: Undefined"
+              TextColor="White"
+              FontSize="16"/>
+
+      
+    
+  </StackLayout>
+</ContentPage>

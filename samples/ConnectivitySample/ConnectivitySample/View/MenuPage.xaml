@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConnectivitySample.View.MenuPage"
+             xmlns:local="ConnectivitySample.View.MenuPage"
+             >
+
+  <MasterDetailPage.Master>
+    <ContentPage Title="Menu" BackgroundColor="#66cccc" Icon="menu.png">
+      <StackLayout Orientation="Vertical">
+
+        <Button Clicked="Conectivity_OnClicked"
+                Image="Network.png"
+                 Text="Test Connectivity"
+                Opacity=".7"
+                FontSize="13" 
+                BackgroundColor="#00abc5"
+                TextColor="White"/>
+        
+         <Button Clicked="Share_OnClicked"
+                Image="share.png"
+                 Text="Share App"
+                Opacity=".7"
+                FontSize="13" 
+                BackgroundColor="#00abc5"
+                TextColor="White"/>
+  
+        <Button Clicked="Call_OnClicked"
+                Image="phone.png"
+                 Text="Contact Helpdesk"
+                Opacity=".7"
+                FontSize="13" 
+                BackgroundColor="#00abc5"
+                TextColor="White"/>
+
+        <Button Clicked="siteButton_OnClicked"
+                Image="globe.png"
+                 Text="Grundfos site"
+                Opacity=".7"
+                FontSize="13"  
+                BackgroundColor="#00abc5"
+                TextColor="White"/>
+
+ <Button
+                Image="exit.png"
+                 Text="Exit"
+                Opacity=".7"
+                FontSize="13" 
+                BackgroundColor="#00abc5"
+                TextColor="White"/>
+
+
+
+      </StackLayout>
+    </ContentPage>
+
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <local:HomePage />
+
+  </MasterDetailPage.Detail>
+
+</MasterDetailPage>
