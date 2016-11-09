@@ -31,6 +31,8 @@ namespace ConnectivitySample
 		//		Text = "Connection Types: "
 		//	};
 
+
+
 		//	var bandwidths = new Label
 		//	{
 		//		Text = "Bandwidth Strength"
